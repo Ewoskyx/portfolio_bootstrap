@@ -1,0 +1,28 @@
+.no-overflow {
+  overflow: hidden;
+}
+
+.test {
+  border: 1px solid green;
+}
+
+.primary-color {
+  color: #ff6b00;
+}
+
+.primary-bg {
+  background-color: #1c1a19;
+}
+
+.navbar-color {
+  background-color: #3c3a39;
+}
+
+.secondary-bg {
+  background-color: #fff;
+}
+
+.btn-primary {
+    background-color: #ff6b00 !important;
+    border: none;
+}
