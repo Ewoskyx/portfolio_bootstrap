@@ -23,9 +23,9 @@
     <header>
       <nav
         id="navbar-scroll"
-        class="navbar fixed-top navbar-expand-sm navbar-color navbar-dark"
+        class="navbar fixed-top navbar-expand-sm navbar-color navbar-dark px-0"
       >
-        <div class="container-fluid">
+        <div class="container-fluid no-overflow px-0">
           <a class="navbar-brand ms-5" href="#">Evren Ersoy</a>
           <button
             class="navbar-toggler"
@@ -61,17 +61,27 @@
         </div>
       </nav>
     </header>
-    <section class="container-fluid primary-bg no-overflow p-0 vh-100">
+    <section class="container-fluid primary-bg no-overflow px-0 vh-auto">
       <div class="row">
-        <div class="col-1 d-flex justify-content-center">
+        <div
+          class="
+            col-12 col-md-1
+            d-flex
+            justify-content-center
+            order-1 order-md-0
+          "
+        >
           <ul
             class="
               mt-5
               p-3
-              flex-column
+              flex-row
               d-flex
               justify-content-center
               list-unstyled
+              d-md-flex
+              flex-md-column
+              gap-2
             "
           >
             <li class="mb-3">
@@ -112,7 +122,17 @@
             </li>
           </ul>
         </div>
-        <div class="col-7 flex-column d-flex justify-content-center">
+        <div
+          class="
+            col-8 col-md-7
+            flex-column
+            d-flex
+            justify-content-center
+            ps-5
+            pt-5
+            gap-3
+          "
+        >
           <p class="h1 primary-color text-start">Hey There. <br />I'm Evren</p>
           <p class="h2 text-white text-start">I’am a Software Developer</p>
           <p class="h3 text-white text-start">
@@ -135,16 +155,16 @@
       class="container-fluid secondary-bg no-overflow pt-5 mt-5"
       id="scrollspyHeading1"
     >
-      <div class="row mb-5 mt-5 d-flex align-items-center">
-        <div class="col-4">
+      <div class="row my-5 d-flex align-items-center">
+        <div class="col-12 col-md-4">
           <p class="h1">My Recent Works</p>
         </div>
-        <div class="col-8">
+        <div class="col-12 col-md-8">
           <span><img src="./Assets/divider.png" alt="" /></span>
         </div>
       </div>
       <div class="row">
-        <div class="col-8">
+        <div class="col-12 col-md-8">
           <img
             src="./Assets/work_img.png"
             alt="Recent works image"
@@ -152,7 +172,7 @@
             height="100%"
           />
         </div>
-        <div class="col-4">
+        <div class="col-12 col-md-4">
           <p class="h3">Multi-Post Stories</p>
           <p class="h4 mt-3">
             A daily selection of privately personalized reads; no accounts or
@@ -194,8 +214,9 @@
           <button type="button" class="btn btn-primary">See Project</button>
         </div>
       </div>
-      <div class="row mt-5 p-1">
-        <div class="col">
+      <!-- CARDS -->
+      <div class="row mt-5 g-4">
+        <div class="d-none d-md-block col-12 col-md-6 col-lg-4">
           <div class="card bg-dark text-white">
             <img src="./Assets/dsk-1.png" alt="..." class="card-img" />
             <div
@@ -205,7 +226,168 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="d-none d-md-block col-12 col-md-6 col-lg-4">
+          <div class="card bg-dark text-white">
+            <img src="./Assets/dsk-2-5.png" alt="..." class="card-img" />
+            <div
+              class="
+                card-img-overlay
+                d-flex
+                flex-column
+                justify-content-end
+                gap-5
+              "
+            >
+              <h4 class="card-title">Data Dashboard Healthcare</h4>
+              <p class="card-text">
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required. has been the industry's standard
+              </p>
+              <div class="row">
+                <ul
+                  class="
+                    list-group
+                    d-flex
+                    flex-row
+                    justify-content-center
+                    gap-4
+                    list-unstyled
+                    mt-3
+                  "
+                >
+                  <li class="me-2">
+                    <a href="#"
+                      ><span class="badge bg-secondary"
+                        ><p class="h5">html</p></span
+                      ></a
+                    >
+                  </li>
+                  <li class="me-2">
+                    <a href="#"
+                      ><span class="badge bg-secondary"
+                        ><p class="h5">bootstrap</p></span
+                      ></a
+                    >
+                  </li>
+                  <li class="me-2">
+                    <a href="#"
+                      ><span class="badge bg-secondary"
+                        ><p class="h5">Ruby</p></span
+                      ></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-none d-md-block col-12 col-md-6 col-lg-4">
+          <div class="card bg-dark text-white">
+            <img src="./Assets/dsk-3-6.png" alt="..." class="card-img" />
+            <div
+              class="
+                card-img-overlay
+                d-flex
+                flex-column
+                justify-content-end
+                gap-5
+              "
+            >
+              <h4 class="card-title">Website Protfolio</h4>
+              <p class="card-text">
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required. has been the industry's standard
+              </p>
+              <div class="row">
+                <ul
+                  class="
+                    list-group
+                    d-flex
+                    flex-row
+                    justify-content-center
+                    gap-4
+                    list-unstyled
+                    mt-3
+                  "
+                >
+                  <li class="me-2">
+                    <a href="#"
+                      ><span class="badge bg-secondary"
+                        ><p class="h5">html</p></span
+                      ></a
+                    >
+                  </li>
+                  <li class="me-2">
+                    <a href="#"
+                      ><span class="badge bg-secondary"
+                        ><p class="h5">bootstrap</p></span
+                      ></a
+                    >
+                  </li>
+                  <li class="me-2">
+                    <a href="#"
+                      ><span class="badge bg-secondary"
+                        ><p class="h5">Ruby</p></span
+                      ></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-none d-md-block col-12 col-md-6 col-lg-4">
+          <div class="card bg-dark text-white">
+            <img
+              src="./Assets/default-work-img.png"
+              alt="..."
+              class="card-img"
+            />
+            <div
+              class="
+                card-img-overlay
+                d-flex
+                flex-column
+                justify-content-end
+                gap-5
+              "
+            >
+              <h4 class="card-title">Profesional Art Printing Data</h4>
+              <p class="card-text">
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required. has been the industry's standard
+              </p>
+              <div class="row">
+                <ul
+                  class="d-flex justify-content-center gap-4 list-unstyled mt-3"
+                >
+                  <li class="me-2">
+                    <a href="#"
+                      ><span class="badge bg-secondary"
+                        ><p class="h5">html</p></span
+                      ></a
+                    >
+                  </li>
+                  <li class="me-2">
+                    <a href="#"
+                      ><span class="badge bg-secondary"
+                        ><p class="h5">bootstrap</p></span
+                      ></a
+                    >
+                  </li>
+                  <li class="me-2">
+                    <a href="#"
+                      ><span class="badge bg-secondary"
+                        ><p class="h5">Ruby</p></span
+                      ></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-none d-md-block col-12 col-md-6 col-lg-4">
           <div class="card bg-dark text-white">
             <img src="./Assets/dsk-2-5.png" alt="..." class="card-img" />
             <div
@@ -252,7 +434,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="d-none d-md-block col-12 col-md-6 col-lg-4">
           <div class="card bg-dark text-white">
             <img src="./Assets/dsk-3-6.png" alt="..." class="card-img" />
             <div
@@ -299,11 +481,469 @@
             </div>
           </div>
         </div>
+        <!--Mobile Cards-->
+        <div class="d-block d-md-none col-12 col-md-6 col-lg-4">
+          <div class="card bg-dark text-white">
+            <img
+              src="./Assets/default-work-img.png"
+              alt="..."
+              class="card-img"
+            />
+            <div
+              class="
+                card-img-overlay
+                d-flex
+                flex-column
+                justify-content-end
+                gap-5
+              "
+            >
+              <h4 class="card-title">Profesional Art Printing Data</h4>
+              <p class="card-text">
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required. has been the industry's standard
+              </p>
+              <div class="row">
+                <ul
+                  class="d-flex justify-content-center gap-4 list-unstyled mt-3"
+                >
+                  <li class="me-2">
+                    <a href="#"
+                      ><span class="badge bg-secondary"
+                        ><p class="h5">html</p></span
+                      ></a
+                    >
+                  </li>
+                  <li class="me-2">
+                    <a href="#"
+                      ><span class="badge bg-secondary"
+                        ><p class="h5">bootstrap</p></span
+                      ></a
+                    >
+                  </li>
+                  <li class="me-2">
+                    <a href="#"
+                      ><span class="badge bg-secondary"
+                        ><p class="h5">Ruby</p></span
+                      ></a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="row">
+                <button type="button" class="btn btn-primary">
+                  See Project
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-block d-md-none col-12 col-md-6 col-lg-4">
+          <div class="card bg-dark text-white">
+            <img
+              src="./Assets/default-work-img.png"
+              alt="..."
+              class="card-img"
+            />
+            <div
+              class="
+                card-img-overlay
+                d-flex
+                flex-column
+                justify-content-end
+                gap-5
+              "
+            >
+              <h4 class="card-title">Profesional Art Printing Data</h4>
+              <p class="card-text">
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required. has been the industry's standard
+              </p>
+              <div class="row">
+                <ul
+                  class="d-flex justify-content-center gap-4 list-unstyled mt-3"
+                >
+                  <li class="me-2">
+                    <a href="#"
+                      ><span class="badge bg-secondary"
+                        ><p class="h5">html</p></span
+                      ></a
+                    >
+                  </li>
+                  <li class="me-2">
+                    <a href="#"
+                      ><span class="badge bg-secondary"
+                        ><p class="h5">bootstrap</p></span
+                      ></a
+                    >
+                  </li>
+                  <li class="me-2">
+                    <a href="#"
+                      ><span class="badge bg-secondary"
+                        ><p class="h5">Ruby</p></span
+                      ></a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="row">
+                <button type="button" class="btn btn-primary">
+                  See Project
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-block d-md-none col-12 col-md-6 col-lg-4">
+          <div class="card bg-dark text-white">
+            <img
+              src="./Assets/default-work-img.png"
+              alt="..."
+              class="card-img"
+            />
+            <div
+              class="
+                card-img-overlay
+                d-flex
+                flex-column
+                justify-content-end
+                gap-5
+              "
+            >
+              <h4 class="card-title">Profesional Art Printing Data</h4>
+              <p class="card-text">
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required. has been the industry's standard
+              </p>
+              <div class="row">
+                <ul
+                  class="d-flex justify-content-center gap-4 list-unstyled mt-3"
+                >
+                  <li class="me-2">
+                    <a href="#"
+                      ><span class="badge bg-secondary"
+                        ><p class="h5">html</p></span
+                      ></a
+                    >
+                  </li>
+                  <li class="me-2">
+                    <a href="#"
+                      ><span class="badge bg-secondary"
+                        ><p class="h5">bootstrap</p></span
+                      ></a
+                    >
+                  </li>
+                  <li class="me-2">
+                    <a href="#"
+                      ><span class="badge bg-secondary"
+                        ><p class="h5">Ruby</p></span
+                      ></a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="row">
+                <button type="button" class="btn btn-primary">
+                  See Project
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-block d-md-none col-12 col-md-6 col-lg-4">
+          <div class="card bg-dark text-white">
+            <img
+              src="./Assets/default-work-img.png"
+              alt="..."
+              class="card-img"
+            />
+            <div
+              class="
+                card-img-overlay
+                d-flex
+                flex-column
+                justify-content-end
+                gap-5
+              "
+            >
+              <h4 class="card-title">Profesional Art Printing Data</h4>
+              <p class="card-text">
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required. has been the industry's standard
+              </p>
+              <div class="row">
+                <ul
+                  class="d-flex justify-content-center gap-4 list-unstyled mt-3"
+                >
+                  <li class="me-2">
+                    <a href="#"
+                      ><span class="badge bg-secondary"
+                        ><p class="h5">html</p></span
+                      ></a
+                    >
+                  </li>
+                  <li class="me-2">
+                    <a href="#"
+                      ><span class="badge bg-secondary"
+                        ><p class="h5">bootstrap</p></span
+                      ></a
+                    >
+                  </li>
+                  <li class="me-2">
+                    <a href="#"
+                      ><span class="badge bg-secondary"
+                        ><p class="h5">Ruby</p></span
+                      ></a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="row">
+                <button type="button" class="btn btn-primary">
+                  See Project
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-block d-md-none col-12 col-md-6 col-lg-4">
+          <div class="card bg-dark text-white">
+            <img
+              src="./Assets/default-work-img.png"
+              alt="..."
+              class="card-img"
+            />
+            <div
+              class="
+                card-img-overlay
+                d-flex
+                flex-column
+                justify-content-end
+                gap-5
+              "
+            >
+              <h4 class="card-title">Profesional Art Printing Data</h4>
+              <p class="card-text">
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required. has been the industry's standard
+              </p>
+              <div class="row">
+                <ul
+                  class="d-flex justify-content-center gap-4 list-unstyled mt-3"
+                >
+                  <li class="me-2">
+                    <a href="#"
+                      ><span class="badge bg-secondary"
+                        ><p class="h5">html</p></span
+                      ></a
+                    >
+                  </li>
+                  <li class="me-2">
+                    <a href="#"
+                      ><span class="badge bg-secondary"
+                        ><p class="h5">bootstrap</p></span
+                      ></a
+                    >
+                  </li>
+                  <li class="me-2">
+                    <a href="#"
+                      ><span class="badge bg-secondary"
+                        ><p class="h5">Ruby</p></span
+                      ></a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="row">
+                <button type="button" class="btn btn-primary">
+                  See Project
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-block d-md-none col-12 col-md-6 col-lg-4">
+          <div class="card bg-dark text-white">
+            <img
+              src="./Assets/default-work-img.png"
+              alt="..."
+              class="card-img"
+            />
+            <div
+              class="
+                card-img-overlay
+                d-flex
+                flex-column
+                justify-content-end
+                gap-5
+              "
+            >
+              <h4 class="card-title">Profesional Art Printing Data</h4>
+              <p class="card-text">
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required. has been the industry's standard
+              </p>
+              <div class="row">
+                <ul
+                  class="d-flex justify-content-center gap-4 list-unstyled mt-3"
+                >
+                  <li class="me-2">
+                    <a href="#"
+                      ><span class="badge bg-secondary"
+                        ><p class="h5">html</p></span
+                      ></a
+                    >
+                  </li>
+                  <li class="me-2">
+                    <a href="#"
+                      ><span class="badge bg-secondary"
+                        ><p class="h5">bootstrap</p></span
+                      ></a
+                    >
+                  </li>
+                  <li class="me-2">
+                    <a href="#"
+                      ><span class="badge bg-secondary"
+                        ><p class="h5">Ruby</p></span
+                      ></a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="row">
+                <button type="button" class="btn btn-primary">
+                  See Project
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section>
-      <div class="row p-4">
+    <section
+      id="about"
+      class="container-fluid primary-bg no-overflow mt-5 py-5"
+    >
+      <div class="row">
+        <div class="col-6">
+          <h2 class="h2 primary-color pb-3 mb-5">About me</h2>
+          <p class="h4 text-white pb-3 mb-5">
+            Hello I’m a software developer! I can help you build a product ,
+            feature or website Look through some of my work and experience! If
+            you like what you see and have a project you need coded, don’t
+            hestiate to contact me.
+          </p>
+          <button type="button" class="btn btn-primary">Get My Resume</button>
+        </div>
+        <div class="col-6 p-0">
+          <img
+            src="./Assets/about-me-img2.png"
+            alt="..."
+            width="100%"
+            height="100%"
+          />
+        </div>
+        <div class="col-12 mt-3">
+          <img
+            src="./Assets/divider-light.png"
+            alt="..."
+            width="100%"
+            height="5%"
+          />
+        </div>
+        <!--Skills-->
+
+        <div class="container">
+          <div class="row">
+            <div
+              class="
+                col-12 col-md-4
+                text-white
+                d-flex
+                flex-column
+                align-items-center
+                p-5
+              "
+            >
+              <div class="row">
+                <div class="col-2 d-flex flex-row align-items-center">
+                  <img src="./Assets/rectangle.png" alt="..." />
+                </div>
+                <div class="col">
+                  <h2 class="h2">Language</h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-2">
+                  <ul class="list-unstyled h5 pt-3">
+                    <li class="mb-3">Javascript</li>
+                    <li class="mb-3">Html</li>
+                    <li class="mb-3">Ruby</li>
+                    <li class="mb-3">Css</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div
+              class="
+                col-12 col-md-4
+                text-white
+                d-flex
+                flex-column
+                align-items-center
+                p-5
+              "
+            >
+              <div class="row">
+                <div class="col-2 d-flex flex-row align-items-center">
+                  <img src="./Assets/square.png" alt="..." />
+                </div>
+                <div class="col-2">
+                  <h2 class="h2">Frameworks</h2>
+                </div>
+              </div>
+              <ul class="list-unstyled h5 pt-3">
+                <li class="mb-3">Bootstrap</li>
+                <li class="mb-3">Ruby on Rails</li>
+                <li class="mb-3">RSPec</li>
+                <li class="mb-3">CapyBara</li>
+                <li class="mb-3">Selenium</li>
+              </ul>
+            </div>
+            <div
+              class="
+                col-12 col-md-4
+                text-white
+                d-flex
+                flex-column
+                align-items-center
+                p-5
+              "
+            >
+              <div class="row">
+                <div class="col-2 d-flex flex-row align-items-center">
+                  <img src="./Assets/circle.png" alt="..." />
+                </div>
+                <div class="col-2">
+                  <h2 class="h2">Skills</h2>
+                </div>
+              </div>
+              <ul class="list-unstyled h5 pt-3">
+                <li class="mb-3">Codekit</li>
+                <li class="mb-3">Github</li> 
+                <li class="mb-3">Codepen</li>
+                <li class="mb-3">Gitlab</li>
+                <li class="mb-3">Terminal</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid no-overflow vh-100 d-flex flex-column justify-content-center">
+      <div class="row py-5">
         <div class="col-6">
           <p class="h3">
             I'm always interested in hearing about new projects, so if you'd
@@ -333,8 +973,64 @@
             <div class="form-group p-2">
               <label for="message">Enter Text Here</label>
               <textarea class="form-control" id="message" rows="3"></textarea>
+              <button type="submit" class="btn btn-primary p-2 mt-2">Get in touch</button>
             </div>
           </form>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <img src="./Assets/divider.png" alt="..." width="100%" height="1%">
+          </div>
+          <div class="col-12">
+            <ul
+            class="
+              mt-5
+              p-3
+              flex-row
+              d-flex
+              justify-content-center
+              list-unstyled
+              gap-2
+            "
+          >
+            <li class="mb-3">
+              <a href="#"
+                ><img
+                  class="rounded"
+                  src="./Assets/footer2.png"
+                  alt="social media icon"
+              /></a>
+            </li>
+            <li class="mb-3">
+              <a href="#"
+                ><img class="rounded" src="./Assets/footer3.png" alt="social
+                media icon" /></a
+              >
+            </li>
+            <li class="mb-3">
+              <a href="#"
+                ><img class="rounded" src="./Assets/footer4.png" alt="social
+                media icon" /></a
+              >
+            </li>
+            <li class="mb-3">
+              <a href="#"
+                ><img
+                  class="rounded"
+                  src="./Assets/footer5.png"
+                  alt="social media icon"
+              /></a>
+            </li>
+            <li class="mb-3">
+              <a href="#"
+                ><img
+                  class="rounded"
+                  src="./Assets/footer6.png"
+                  alt="social media icon"
+              /></a>
+            </li>
+          </ul>
+          </div>
         </div>
       </div>
     </section>
