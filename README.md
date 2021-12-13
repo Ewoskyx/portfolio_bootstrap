@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Portfolio Project Bootstrap5 Version
 
 > One paragraph statement about the project.
 
@@ -10,9 +10,10 @@ Additional description about the project and its features.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- Javascript
+- HTML5
+- CSS3
+- Bootstrap 5
 
 ## Live Demo
 
